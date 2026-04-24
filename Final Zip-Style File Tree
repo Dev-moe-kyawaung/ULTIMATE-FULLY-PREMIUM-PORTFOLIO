@@ -1,0 +1,57 @@
+.
+├── README.md
+├── .gitignore
+├── package.json
+├── vercel.json
+├── assets/
+│   └── preview.png
+├── .github/
+│   └── profile/
+│       └── README.md
+├── main-premium-nextjs/
+│   ├── package.json
+│   ├── next.config.js
+│   ├── jsconfig.json
+│   ├── postcss.config.js
+│   ├── tailwind.config.js
+│   ├── .env.local
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── robots.txt
+│   │   ├── site.webmanifest
+│   │   ├── preview.png
+│   │   └── projects/
+│   │       ├── premium-nextjs-portfolio.png
+│   │       ├── developer-dashboard-ui.png
+│   │       ├── github-profile-branding.png
+│   │       └── responsive-contact-section.png
+│   └── src/
+│       ├── app/
+│       │   ├── globals.css
+│       │   ├── layout.jsx
+│       │   ├── page.jsx
+│       │   ├── sitemap.js
+│       │   ├── api/
+│       │   │   └── github/
+│       │   │       └── route.js
+│       │   └── projects/
+│       │       ├── page.jsx
+│       │       └── [slug]/
+│       │           └── page.jsx
+│       ├── components/
+│       │   ├── AnimatedHero.jsx
+│       │   ├── BackgroundFX.jsx
+│       │   ├── ContactForm.jsx
+│       │   ├── ContactSection.jsx
+│       │   ├── FeatureCard.jsx
+│       │   ├── GithubLiveStats.jsx
+│       │   ├── GithubStats.jsx
+│       │   ├── Navbar.jsx
+│       │   ├── ParticleDots.jsx
+│       │   ├── PremiumCard.jsx
+│       │   ├── ProjectCard.jsx
+│       │   ├── ProjectImage.jsx
+│       │   ├── SectionTitle.jsx
+│       │   └── TechBadge.jsx
+│       └── data/
+│           └── portfolio.js

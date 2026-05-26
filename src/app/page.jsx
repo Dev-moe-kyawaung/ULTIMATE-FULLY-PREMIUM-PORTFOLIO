@@ -4,7 +4,9 @@ import ProjectCard from "@/components/ProjectCard";
 import FeatureCard from "@/components/FeatureCard";
 import GithubLiveStats from "@/components/GithubLiveStats";
 import ContactSection from "@/components/ContactSection";
+import AboutSection from "@/components/AboutSection";
 import portfolioData from "@/data/portfolio";
+import Link from "next/link";
 
 export default function HomePage() {
   const featuredProjects = portfolioData.projects.filter((p) => p.featured);
@@ -14,6 +16,9 @@ export default function HomePage() {
       <AnimatedHero />
 
       <div className="mx-auto max-w-7xl space-y-24 px-6 pb-24">
+        {/* About & Skills */}
+        <AboutSection />
+
         {/* Features */}
         <section>
           <SectionTitle
@@ -30,11 +35,19 @@ export default function HomePage() {
 
         {/* Featured Projects */}
         <section>
-          <SectionTitle
-            label="Work"
-            title="Featured Projects"
-            subtitle="A selection of recent work that reflects my approach to building high-quality web experiences."
-          />
+          <div className="flex flex-col items-center gap-6 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
+            <SectionTitle
+              label="Work"
+              title="Featured Projects"
+              subtitle="A selection of recent work that reflects my approach to building high-quality web experiences."
+            />
+            <Link
+              href="/projects"
+              className="shrink-0 rounded-xl border border-white/10 px-4 py-2 text-sm font-semibold text-slate-300 transition hover:bg-white/10 hover:text-white"
+            >
+              View all projects
+            </Link>
+          </div>
           <div className="mt-12 grid gap-8 md:grid-cols-2">
             {featuredProjects.map((project) => (
               <ProjectCard key={project.slug} project={project} />

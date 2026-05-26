@@ -17,6 +17,21 @@ const portfolioData = {
     { label: "Technologies", value: "12+" },
   ],
 
+  skillGroups: [
+    {
+      category: "Frontend",
+      skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "HTML & CSS"],
+    },
+    {
+      category: "Backend",
+      skills: ["Node.js", "Supabase", "PostgreSQL", "REST APIs", "Edge Functions"],
+    },
+    {
+      category: "Tooling",
+      skills: ["GitHub Actions", "Vercel", "Figma", "Git", "Docker"],
+    },
+  ],
+
   skills: [
     "Next.js",
     "React",
@@ -30,6 +45,33 @@ const portfolioData = {
     "Vercel",
     "REST APIs",
     "Git",
+  ],
+
+  timeline: [
+    {
+      year: "2024",
+      title: "Senior Full-Stack Engineer",
+      company: "Freelance",
+      description: "Building premium web applications for clients worldwide using Next.js, Supabase, and modern tooling.",
+    },
+    {
+      year: "2023",
+      title: "Full-Stack Developer",
+      company: "Tech Startup",
+      description: "Led frontend architecture for a SaaS platform serving 10K+ users. Migrated legacy codebase to Next.js App Router.",
+    },
+    {
+      year: "2022",
+      title: "Frontend Developer",
+      company: "Digital Agency",
+      description: "Delivered responsive, accessible web interfaces for e-commerce and marketing clients across Southeast Asia.",
+    },
+    {
+      year: "2021",
+      title: "Self-Taught Developer",
+      company: "Independent",
+      description: "Began the journey into web development, mastering HTML, CSS, JavaScript, and React fundamentals.",
+    },
   ],
 
   projects: [
